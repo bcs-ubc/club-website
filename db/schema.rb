@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2019_10_23_062643) do
     t.integer "user_id"
   end
 
-  create_table "activities", force: :cascade do |t|
+  create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
