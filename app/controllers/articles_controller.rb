@@ -18,7 +18,7 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
 
   def create
     # render plain: params[:Article].inspect
-    @article = Article.new(Article_params)
+    @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
       flash[:success] = "Article was successfully created"
@@ -47,8 +47,8 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
   end
 
   private
-    def Article_params
-      params.require(:Article).permit(:title, :description, :user_id)
+    def article_params
+      params.require(:article).permit(:title, :description, :user_id)
     end
 
     def set_Article
@@ -58,7 +58,7 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
     def require_permissions
       if @article.user != current_user && !admin?
         flash[:danger] = "You do not have permissions to perform that action"
-        redirect_back(fallback_location: Articles_path)
+        redirect_back(fallback_location: articles_path)
       end
     end
 end
