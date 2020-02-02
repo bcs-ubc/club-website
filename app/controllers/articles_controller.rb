@@ -22,16 +22,16 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
     @article.user = current_user
     if @article.save
       flash[:success] = "Article was successfully created"
-      redirect_to Article_path(@article)
+      redirect_to articles_path(@article)
     else
       render 'new'
     end
   end
 
   def update
-    if @article.update(Article_params)
+    if @article.update(article_params)
       flash[:success] = "Article was successfully updated"
-      redirect_to Article_path(@article)
+      redirect_to article_path(@article)
     else
       render 'edit'
     end
@@ -43,7 +43,7 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
   def destroy
     @article.destroy
     flash[:danger] = "Article successfully deleted"
-    redirect_to Articles_path
+    redirect_to articles_path
   end
 
   private
