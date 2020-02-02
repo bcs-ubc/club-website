@@ -2,14 +2,16 @@
  text-shadow: 2px 2px black'>Upcoming Events</h1>
 
 <div align="center">
-  <%= will_paginate %>
+
 </div>
 
 <%= render "/articles/list_new_articles", obj: @articles %>
 
 <h1 align='center' style='margin-top: 10em;'>Past Events</h1>
 
-<%= render "/articles/list_new_articles", obj: @articles %>
+  <%= will_paginate %>
+  
+<%= render "/articles/list_past_articles", obj: @articles %>
 
 <div align="center">
   <%= will_paginate %>
