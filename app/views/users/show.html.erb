@@ -44,9 +44,7 @@
         <p>
             <strong>Status:</strong> <%= @user.creator? ? "Creator (y)!" : "Not yet a creator" %>
         </p>
-        <%= button_to "Apply for Creator Status", apply_creator_status_path(@user), method: :get, class: "btn btn-sm btn-primary" if !@user.creator? && !@user.awaiting_creator_approval? %>
-        <%= button_to "Approve Creator Status", approve_creator_status_path(@user), method: :get, class: "btn btn-sm btn-primary" if admin? && @user.awaiting_creator_approval? %>
-        <%= button_to "Revoke Creator Status", revoke_creator_status_path(@user), method: :get, class: "btn btn-sm btn-primary" if @user.creator? %>
+
         <div class="article-actions" style="padding-top:25px;">
             <% if (current_user == @user && user_signed_in?) || admin? %>
             <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-sm btn-primary" %>
