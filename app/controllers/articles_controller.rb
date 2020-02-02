@@ -21,7 +21,7 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
     @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
-      flash[:success] = "Article was successfully created"
+      flash[:success] = "Event was successfully created"
       redirect_to articles_path(@article)
     else
       render 'new'
@@ -30,7 +30,7 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
 
   def update
     if @article.update(article_params)
-      flash[:success] = "Article was successfully updated"
+      flash[:success] = "Event was successfully updated"
       redirect_to article_path(@article)
     else
       render 'edit'
