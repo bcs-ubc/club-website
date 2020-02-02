@@ -1,0 +1,5 @@
+current directory: C:/Users/kwokj/Dropbox/Rails/BCS Club Website/club-website/vendor/bundle/gems/childprocess-2.0.0/ext
+C:/Ruby26-x64/bin/ruby.exe mkrf_conf.rb
+
+current directory: C:/Users/kwokj/Dropbox/Rails/BCS Club Website/club-website/vendor/bundle/gems/childprocess-2.0.0/ext
+C:/Ruby26-x64/bin/ruby.exe -rrubygems C:/Users/kwokj/Dropbox/Rails/BCS\ Club\ Website/club-website/vendor/bundle/gems/rake-12.3.3/exe/rake RUBYARCHDIR\=C:/Users/kwokj/Dropbox/Rails/BCS\ Club\ Website/club-website/vendor/bundle/extensions/x64-mingw32/2.6.0/childprocess-2.0.0 RUBYLIBDIR\=C:/Users/kwokj/Dropbox/Rails/BCS\ Club\ Website/club-website/vendor/bundle/extensions/x64-mingw32/2.6.0/childprocess-2.0.0
