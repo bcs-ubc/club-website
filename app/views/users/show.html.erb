@@ -29,7 +29,7 @@
 
         <br>
         <br>
-        <p>(does nothing right now)</p>
+        <p><%= @user.username %></p>
     </div>
 
     <div class="col-md-5 col-md-offset-1" style="margin-top:10px;">
@@ -42,7 +42,7 @@
             <%= @user.email %>
         </p>
         <p>
-            <strong>Status:</strong> <%= @user.creator? ? "Creator (y)!" : "Not yet a creator" %>
+            <strong>Status:</strong> <%= @user.creator? ? "Creator (y)!" : "The Best" %>
         </p>
 
         <div class="article-actions" style="padding-top:25px;">
