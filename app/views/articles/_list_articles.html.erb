@@ -16,8 +16,10 @@
         </div>
         <% if (article.user == current_user && user_signed_in?) || admin? %>
           <div class="article-actions">
-            <%= link_to "Edit", edit_article_path(article), class: "btn btn-sm btn-primary" %>
-            <%= link_to "Delete", article_path(article), class: "btn btn-sm btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+            <%= link_to "Edit", edit_article_path(article),
+            class: "btn btn-sm btn-primary" %>
+            <%= link_to "Delete", article_path(article), 
+            class: "btn btn-sm btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
           </div>
         <% end %>
       </div>
