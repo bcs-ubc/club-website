@@ -7,9 +7,10 @@
 
 <%= render "/articles/list_new_articles", obj: @articles %>
 
-<h1 align='center' style='margin-top: 10em;'>Past Events</h1>
-
   <%= will_paginate %>
+<div class="col-xs-8 col-xs-offset-2">
+<h1 align='center' style='margin-bottom: .5em;'>Past Events</h1>
+</div>
 
 <%= render "/articles/list_past_articles", obj: @articles %>
 
