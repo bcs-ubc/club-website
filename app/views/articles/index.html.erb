@@ -5,7 +5,11 @@
   <%= will_paginate %>
 </div>
 
-<%= render "/articles/list_articles", obj: @articles %>
+<%= render "/articles/list_new_articles", obj: @articles %>
+
+<h1 align='center' style='margin-top: 10em;'>Past Events</h1>
+
+<%= render "/articles/list_new_articles", obj: @articles %>
 
 <div align="center">
   <%= will_paginate %>

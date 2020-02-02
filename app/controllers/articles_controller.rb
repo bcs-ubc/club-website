@@ -48,7 +48,7 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
 
   private
     def article_params
-      params.require(:article).permit(:title, :description, :user_id)
+      params.require(:article).permit(:title, :description, :user_id, :start_time, :start_date)
     end
 
     def set_Article
