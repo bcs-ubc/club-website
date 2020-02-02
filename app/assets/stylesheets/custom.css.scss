@@ -1,0 +1,159 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.nav {
+  float:left;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  background-color: inherit;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: inherit;
+    color: #FC0;
+}
+
+.title {
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-top: 1em;
+  color: inherit;
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.jumbotron {
+  background-image: asset-url('click-feed-logo.png');
+  background-position: center;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  height: 400px;
+  text-align: center;
+  background-color: inherit;
+}
+
+.alpha-btn {
+  background-color: black;
+  border-color: #FC0;
+  color: white;
+}
+
+.alpha-btn:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.footer {
+  border-top: 1px solid #eaeaea;
+  color: #777
+}
+
+.footer:hover {
+  color: #222;
+}
+
+.article-title {
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: .4em;
+}
+
+.article-body {
+  margin-bottom: .4em;
+}
+
+.article-meta {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.field {
+  autocomplete: off
+}
+
+.navbar, .navbar-default, .navbar-nav>li>a {
+    background: inherit;
+    border-color: #3333 !important;
+    color: white !important;
+}
+
+.navbar, .navbar-default, .navbar-nav>li>a:hover {
+    background: inherit;
+    border-color: #3333 !important;
+    color: #FC0 !important;
+}
+
+.dropdown-menu > li > a {
+    background-color: #333333;
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    background-color: #333333;
+}
+
+.dropdown-toggle {
+    background-color: inherit !important;
+}
+
+.embeded-video {
+    text-align: center;
+}
+
+.btn-primary {
+  background-color: black;
+  border-color: #FC0;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.footer-custom {
+    text-align:center;
+    color: #777;
+    margin-top:100px;
+}
+
+.well {
+    background-color: inherit;
+    border: black solid;
+}
+
+.well-signup {
+    margin-top:50px;
+    max-width: 575px;
+}
+
+.avatar-window, .avatar-window>img {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.avatar-window:hover {
+    opacity: 0.3;
+}
+
+.add-photo {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.avatar-window:hover .add-photo {
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #2d2d2e;
+}

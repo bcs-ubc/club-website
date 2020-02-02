@@ -1,0 +1,84 @@
+<h1 style="text-align:center; margin-bottom:80px;">Profile</h1>
+
+<div class="row">
+    <div class="well col-md-3 col-md-offset-2" style="text-align:center;">
+        <div class="avatar-window">
+            <% if @user.avatar.attached? %>
+            <img src="<%=(url_for(@user.avatar))%>">
+            <div class="avatar-window add-photo">
+                <%= button_to "Delete Photo", destroy_photo_path(@user),
+                method: :get, class: "btn btn-danger btn-sm",
+                data: {confirm: "Are you sure you want to delete this photo? This action cannot be undone."} %>
+            </div>
+            <% else %>
+            <img src="/assets/emptyavatar.png" alt="">
+            <div class="avatar-window add-photo">
+                <!-- Button trigger modal -->
+                <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#normal">
+                    Add Photo
+                </button>
+            </div>
+            <% end %>
+        </div>
+        <br>
+        <br>
+
+        <div class="btn btn-primary">
+            ClickFeed Stats
+        </div>
+
+        <br>
+        <br>
+        <p>(does nothing right now)</p>
+    </div>
+
+    <div class="col-md-5 col-md-offset-1" style="margin-top:10px;">
+        <p>
+            <strong>Username:</strong>
+            <%= @user.username %>
+        </p>
+        <p>
+            <strong>Email:</strong>
+            <%= @user.email %>
+        </p>
+        <p>
+            <strong>Status:</strong> <%= @user.creator? ? "Creator (y)!" : "Not yet a creator" %>
+        </p>
+        <%= button_to "Apply for Creator Status", apply_creator_status_path(@user), method: :get, class: "btn btn-sm btn-primary" if !@user.creator? && !@user.awaiting_creator_approval? %>
+        <%= button_to "Approve Creator Status", approve_creator_status_path(@user), method: :get, class: "btn btn-sm btn-primary" if admin? && @user.awaiting_creator_approval? %>
+        <%= button_to "Revoke Creator Status", revoke_creator_status_path(@user), method: :get, class: "btn btn-sm btn-primary" if @user.creator? %>
+        <div class="article-actions" style="padding-top:25px;">
+            <% if (current_user == @user && user_signed_in?) || admin? %>
+            <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-sm btn-primary" %>
+            <% end %>
+            <% if admin? %>
+            <%= link_to "Back to all users", users_path, class: "btn btn-sm btn-primary" %>
+            <% end %>
+        </div>
+        <div class="article-actions" style="padding-top:25px;">
+            <%= link_to "Click to Feed!", "/#{@user.id}/feed", class: "btn btn-lg btn-primary" if @user.creator? %>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="normal" tabindex="-1" role="dialog" aria-labelledby="approvalModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Upload Profile Photo</h4>
+            </div>
+            <div class="modal-body">
+                <%= form_for(@user, :html => {class: "form-horizontal", role: "form", autocomplete: "off"}) do |f| %>
+                <%= f.label "Profile Photo" %>
+                <%= f.file_field :avatar %>
+            </div>
+            <div class="modal-footer">
+                <%= submit_tag "Upload", name: nil, class: "btn btn-primary" %>
+                <% end %>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
