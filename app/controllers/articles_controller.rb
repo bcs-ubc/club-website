@@ -18,20 +18,20 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
 
   def create
     # render plain: params[:Article].inspect
-    @article = Article.new(Article_params)
+    @article = Article.new(article_params)
     @article.user = current_user
     if @article.save
-      flash[:success] = "Article was successfully created"
-      redirect_to Article_path(@article)
+      flash[:success] = "Event was successfully created"
+      redirect_to articles_path(@article)
     else
       render 'new'
     end
   end
 
   def update
-    if @article.update(Article_params)
-      flash[:success] = "Article was successfully updated"
-      redirect_to Article_path(@article)
+    if @article.update(article_params)
+      flash[:success] = "Event was successfully updated"
+      redirect_to article_path(@article)
     else
       render 'edit'
     end
@@ -43,12 +43,12 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
   def destroy
     @article.destroy
     flash[:danger] = "Article successfully deleted"
-    redirect_to Articles_path
+    redirect_to articles_path
   end
 
   private
-    def Article_params
-      params.require(:Article).permit(:title, :description, :user_id)
+    def article_params
+      params.require(:article).permit(:title, :description, :user_id, :start_time, :start_date)
     end
 
     def set_Article
@@ -58,7 +58,7 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
     def require_permissions
       if @article.user != current_user && !admin?
         flash[:danger] = "You do not have permissions to perform that action"
-        redirect_back(fallback_location: Articles_path)
+        redirect_back(fallback_location: articles_path)
       end
     end
 end
