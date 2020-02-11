@@ -1,26 +1,10 @@
 # README
 
-`rails s` to start server
-`rails c` to start rails console
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# UBC BCS Students Association Club Website
+### Created by a few BCS Students
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Wishlist:**
+- Improve activities#index page
+- Improve activities#show page
+- Create photo gallery to attach to events
+- Add in form submissions
