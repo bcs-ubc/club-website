@@ -1,5 +1,3 @@
-# README
-
 # UBC BCS Students Association Club Website
 ### Created by a few BCS Students
 
