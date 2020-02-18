@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<title>BCS Hackathon</title>
+		<meta name="description" content="The official BCS (Bachelor's of Computer Science Student Association) Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ben">
+
+        <!-- ================= Favicons ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/bcsicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+		<!-- ============== Resources style ============== -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+
+		<!-- +++ Page loading +++ -->
+		<div id="loading">
+
+			<div id="preloader" class="animated-middle">
+
+				<!-- Your logo -->
+				<img src="img/ubclogo.png" alt="" class="loading-logo" />
+
+				<span class="loading-text">Initializing...</span>
+
+				<span class="load">
+					<span class="loading-dot"></span>
+					<span class="loading-dot"></span>
+					<span class="loading-dot"></span>
+					<span class="loading-dot"></span>
+				</span>
+
+			</div>
+
+		</div>
+
+		<!-- +++ START - Fullpage sections +++ -->
+		<div id="fullpage">
+
+			<!-- +++ START - Home +++ -->
+			<div class="section" id="section0">
+
+				<!-- Your logo -->
+        		<img src="img/ubclogo.png" alt="" class="home-logo" />
+
+				<!-- Background slideshow & light overlay -->
+				<div class="slideshow-home"></div>
+				<div class="slide-overlay"></div>
+
+				<div class="intro">
+
+					<p class="open-anim opacity-0"><h2>BCS Hackathon 2020<br>University of British Columbia<br>March 28</h2></p>
+					<!-- Countdown, set up your end date at the very bottom of this file -->
+					<div id="clock" class="container open-anim opacity-0"></div>
+
+
+
+					<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
+					<a id="button-register" class="light-btn open-anim opacity-0" href= "https://forms.gle/QoPWycvbQXu53QYm7">Register</a>
+
+				</div>
+
+				<!-- Scroll indicator -->
+				<div class="scroll-indicator">
+
+					<!-- Line 1695 in js/jquery.fullpage.js is the place to select the anchor scrolling to the section of your choice -->
+					<a id="indicator-scroll"><i class="icon ion-ios-arrow-down"></i></a>
+
+				</div>
+
+			</div>
+			<!-- +++ END - Home +++ -->
+
+			<!-- +++ START - About +++ -->
+			<div class="section" id="section1">
+
+				<section id="about" class="text-left-block">
+
+					<div class="row row-no-margin">
+
+						<!-- The id="invert-slideshow" and id="invert-text" are used for the responsive mode under 1025px. With that, the slideshow is displayed after the text, looking better for the user experience. If you don't want to invert these divs, just remove the id.-->
+						<div id="invert-slideshow" class="col-xs-12 col-sm-6 col-lg-6 slideshow-about split-section foo"></div>
+
+						<div id="invert-text" class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section">
+
+							<div class="left-center-part foo">
+
+								<h2>Explore, Build, Innovate</h2>
+
+								<p>Join us on <b>March 28</b> for the annual Bachelor of Computer Science Student Association Hackathon. A day of collaborating, networking, and learning to build exciting projects, connect with industry mentors, and to meet new friends.</p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- +++ END - About +++ -->
+
+			<!-- +++ START - Services +++ -->
+			<div class="section" id="section2">
+
+				<section id="services" class="text-left-block">
+
+					<div class="row row-no-margin">
+
+						<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section foo">
+
+							<div class="left-center-part">
+
+								<h2>Hackathon Highlights</h2>
+
+								<p>BCS Hacks 2020 will be the 5th-ever iteration of BCS Hacks. Originally, targetted towards BCS-specific students, we are opening it to the rest of the CS department. A hackathon for all levels of experience.</p>
+
+								<!-- +++ START - Carousel +++ -->
+								<div id="carousel-services" class="carousel slide" data-interval="6000" data-ride="carousel">
+
+							    	<!-- Carousel indicators -->
+							        <ol class="carousel-indicators">
+							            <li data-target="#carousel-services" data-slide-to="0" class="active"></li>
+							            <li data-target="#carousel-services" data-slide-to="1"></li>
+							            <li data-target="#carousel-services" data-slide-to="2"></li>
+							        </ol>
+
+							        <!-- START - Wrapper for carousel items -->
+							        <div class="carousel-inner">
+
+							        	<!-- Services 1 -->
+							            <div class="active item">
+
+				                			<!-- START - Services row -->
+											<div class="row">
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-mic-outline"></span>
+
+													<h3>Keynote Speakers</h3>
+
+													<p>Listen to keynote speakers from the current industry and gain insights in the journey to carve your career.</p>
+
+												</div> <!-- END - Block services -->
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-flask-outline"></span>
+
+													<h3>Gain new skills.</h3>
+
+													<p>Acquire new skills through industry run workshops.</p>
+
+												</div> <!-- END - Block services -->
+
+											</div> <!-- END - Services row -->
+
+							            </div>
+
+							            <!-- Services 2 -->
+							            <div class="item">
+
+				                			<!-- START - Services row -->
+											<div class="row">
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-navigate-outline"></span>
+													<h3>Expand your Project</h3>
+
+													<p>Complete the coding prompt with a team and expand your expertise and skillset by hacking to the finish.</p>
+
+												</div> <!-- END - Block services -->
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-pulse"></span>
+
+													<h3>Free Food</h3>
+
+													<p>Catered free food to all hackathon participants! Who doesn't like free food?</p>
+
+												</div> <!-- END - Block services -->
+
+											</div> <!-- END - Services row -->
+
+							            </div>
+
+							            <!-- Services 3 -->
+							            <div class="item">
+
+				                			<!-- START - Services row -->
+											<div class="row">
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-settings"></span>
+													<h3>Connect with Industry Mentors</h3>
+
+													<p>Reach out to industry professionals, learn, and connect.</p>
+
+												</div> <!-- END - Block services -->
+
+												<!-- START - Block services -->
+												<div class="col-xs-12 col-sm-6 col-lg-6 block-services">
+
+													<span class="icon-services icon ion-ios-color-wand-outline"></span>
+
+													<h3>Explore new opportunities</h3>
+
+													<p>Explore new opportunities by learning more about potential careers and coop placements available from our sponsors.</p>
+												</div> <!-- END - Block services -->
+
+											</div> <!-- END - Services row -->
+
+							            </div>
+
+							        </div>
+							        <!-- END - Wrapper for carousel items -->
+
+							        <!-- Left arrow -->
+							        <a class="carousel-control left" href="#carousel-services" data-slide="prev">
+							            <span class="icon-prev"></span>
+							        </a>
+
+							        <!-- Right arrow -->
+							        <a class="carousel-control right" href="#carousel-services" data-slide="next">
+							            <span class="icon-next"></span>
+							        </a>
+
+							    </div>
+							    <!-- +++ END - Carousel +++ -->
+
+						    </div>
+
+						</div>
+
+						<!-- Slideshow / Image services -->
+						<div class="col-xs-12 col-sm-6 col-lg-6 slideshow-services split-section foo"></div>
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- +++ END - Services +++ -->
+
+			<!-- +++ START - Portfolio +++ -->
+			<div class="section" id="section3">
+
+		        <section id="services" class="text-left-block">
+
+		        	<div class="row row-no-margin">
+
+						<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section foo">
+
+							<div class="left-center-part">
+								<h2>Our Sponsors</h2>
+								<p>We appreciate appreciate and thank our sponsors and the UBC computer science department for making the event possible</p>
+
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+									<img src="img/member-2.jpg" alt="" class="img-responsive team-member" />
+
+									<h2>Sponsor <small>URL/Website</small></h2>
+
+									<p>Lorem ipsum Do dolor commodo occaecat sit pariatur nisi sit laboris officia exercitation officia laboris ex ullamco nulla do in elit.</p>
+								</div>
+
+
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+									<img src="img/sponsor-2.jpg" alt="" class="img-responsive team-member" />
+
+									<h2>Sponsor <small>URL/Website</small></h2>
+
+									<p>Lorem ipsum Do dolor commodo occaecat sit pariatur nisi sit laboris officia exercitation officia laboris ex ullamco nulla do in elit.</p>
+								</div>
+
+							</div>
+						</div>
+
+
+
+					<div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section foo">
+
+						<div class="left-center-part">
+
+							<h2>BCS Executive Team</h2>
+
+							<p>The BCS Executive team members who have organized the event.</p>
+
+							<!-- START - Team -->
+							<div class="row">
+
+								<!-- 1 -->
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+									<ul class="social-team">
+
+										<!-- Facebook -->
+										<li>
+											<a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+
+										<!-- Twitter -->
+										<li>
+											<a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+
+										<!-- Linkedin -->
+										<li>
+											<a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+
+									</ul>
+
+									<img src="img/member-2.jpg" alt="" class="img-responsive team-member" />
+
+									<h3>Jerry Hall <small>President</small></h3>
+
+									<p></p>
+
+								</div>
+
+								<!-- 2 -->
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+									<ul class="social-team">
+
+										<!-- Facebook -->
+										<li>
+											<a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+
+										<!-- Twitter -->
+										<li>
+											<a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+
+										<!-- Linkedin -->
+										<li>
+											<a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+
+									</ul>
+
+									<img src="img/member-2.jpg" alt="" class="img-responsive team-member" />
+
+									<h3>Benjamin Cheung <small>Vice-President</small></h3>
+
+									<p></p>
+								</div>
+
+
+								<!-- 3 -->
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+									<ul class="social-team">
+
+										<!-- Facebook -->
+										<li>
+											<a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+
+										<!-- Twitter -->
+										<li>
+											<a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+
+										<!-- Linkedin -->
+										<li>
+											<a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+
+									</ul>
+
+									<img src="img/member-2.jpg" alt="" class="img-responsive team-member" />
+
+									<h3>Jeffrey Kwok <small>Treasurer</small></h3>
+
+									<p></p>
+								</div>
+
+								<!-- 4 -->
+								<div class="col-xs-12 col-sm-6 col-lg-6 block-team">
+
+									<ul class="social-team">
+
+										<!-- Facebook -->
+										<li>
+											<a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+
+										<!-- Twitter -->
+										<li>
+											<a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+
+										<!-- Linkedin -->
+										<li>
+											<a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+
+									</ul>
+
+									<img src="img/member-2.jpg" alt="" class="img-responsive team-member" />
+
+									<h3>Shaqil Rahemtulla <small>Social Coordinator</small></h3>
+
+									<p></p>
+								</div>
+
+							</div>
+							<!-- END - Team -->
+
+						</div>
+
+					</div>
+
+		        </section>
+
+			</div>
+			<!-- +++ END - Portfolio +++ -->
+
+			<!-- +++ START - Contact +++ -->
+			<div class="section" id="section4">
+
+				<section id="contact" class="text-left-block">
+
+					<div class="row row-no-margin">
+
+
+						<br><br><br>
+						<h2>Event Schedule - Tentative</h2>
+						<br><br><br>
+						<h2>Saturday, March 28</h2>
+						<ul>
+							<li>8:00AM - Registration Opens</li>
+							<li>8:30AM - Breakfast/Refreshment Area Opens </li>
+							<li>8:45AM - Event kickoff (Introduction, prizes, theme reveal)</li>
+							<li>9:00AM - Team Formation</li>
+							<li>9:15AM - Hacking Begins</li>
+							<li>12:30PM - Lunch Served</li>
+							<li>6:30PM - Dinner Served</li>
+							<li>8:30PM - Submission deadline / Presentation sign up</li>
+							<li>8:45PM  - Presentation begins</li>
+							<li>10:00PM - Judging</li>
+							<li>10:30PM - Closing ceremony (Prizes, closing speeches and group photo)</li>
+							<li>11:00PM - Event Over</li>
+
+						</ul>
+						<br>
+
+
+						<p class="copyright">© Bachelors of Computer Science Student Association - University of British Columbia 2020</p>
+
+
+
+
+					</div>
+
+				</section>
+
+			</div>
+			<!-- +++ END - Contact +++ -->
+
+		</div>
+		<!-- +++ END - Fullpage sections +++ -->
+
+
+		<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
+
+		<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+        <!-- ********** jQuery Resources ********** -->
+        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+        <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.easings.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+		<!-- FullPage plugin -->
+		<script src="js/jquery.fullPage.js"></script>
+
+		<!-- Countdown plugin -->
+        <script src="js/jquery.countdown.js"></script>
+
+        <!-- Slideshow plugin -->
+        <script src="js/vegas.js"></script>
+
+        <!-- Scroll Reveal plugin -->
+        <script src="js/scrollreveal.min.js"></script>
+
+
+
+		<!-- PhotoSwipe Core JS file -->
+		<script src="js/photoswipe.js"></script>
+
+		<!-- PhotoSwipe UI JS file -->
+		<script src="js/photoswipe-ui-default.js"></script>
+
+
+
+		<!-- Newsletter plugin -->
+		<script src="js/notifyMe.js"></script>
+
+		<script>
+		// Set up your end date just below
+		$('#clock').countdown('2020/03/28 0:0:0', function(event) {
+
+			var $this = $(this).html(event.strftime(''
+			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%D<span>Days</span></div> '
+			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%H<span>Hours</span></div> '
+			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%M<span>Minutes</span></div> '
+			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%S<span>Seconds</span></div>'));
+
+		});
+		</script>
+
+		<!-- Main JS File -->
+		<script src="js/main-animated.js"></script>
+
+	</body>
+
+</html>
