@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-before_action :set_Article, only: [:edit, :update, :show, :destroy]
+before_action :set_article, only: [:edit, :update, :show, :destroy]
 before_action :require_user, except: [:index, :show]
 before_action :require_permissions, only: [:edit, :update, :destroy]
 
@@ -51,8 +51,8 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
       params.require(:article).permit(:title, :description, :user_id, :start_time, :start_date)
     end
 
-    def set_Article
-      @article = Article.find(params[:id])
+    def set_article
+      @article = Article.friendly.find(params[:id])
     end
 
     def require_permissions
