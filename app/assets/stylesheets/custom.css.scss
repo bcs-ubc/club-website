@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+a:hover {
+    color: #7493c4;
+}
+
 .nav {
   float:left;
   text-transform: uppercase;
