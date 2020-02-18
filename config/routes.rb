@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     get 'about', to: 'pages#about'
     get 'contact', to: 'pages#contact'
 
+    # Custom events routes
+    get 'events/hackathon-2020', to: 'articles#hackathon2020'
+
     resources :articles, path: 'events'
 
     resources :users, except: [:new, :show]

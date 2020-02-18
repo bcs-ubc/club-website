@@ -46,6 +46,9 @@ before_action :require_permissions, only: [:edit, :update, :destroy]
     redirect_to articles_path
   end
 
+  def hackathon2020
+  end
+
   private
     def article_params
       params.require(:article).permit(:title, :description, :user_id, :start_time, :start_date)
