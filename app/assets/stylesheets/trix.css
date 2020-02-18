@@ -61,6 +61,7 @@ trix-toolbar .trix-button {
       letter-spacing: -0.01em;
       padding: 0 0.3em; } }
 trix-toolbar .trix-button--icon {
+  background-color: #e8e8e8;
   font-size: inherit;
   width: 2.6em;
   height: 1.6em;
@@ -131,6 +132,7 @@ trix-toolbar .trix-dialog {
   border-radius: 5px;
   z-index: 5; }
 trix-toolbar .trix-input--dialog {
+  color: black;
   font-size: inherit;
   font-weight: normal;
   padding: 0.5em 0.8em;
