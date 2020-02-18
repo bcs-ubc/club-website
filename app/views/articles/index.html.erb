@@ -1,5 +1,18 @@
 <h1 align='center' style='margin-bottom: .5em;
- text-shadow: 2px 2px black'>Upcoming Events</h1>
+text-shadow: 2px 2px black'>Upcoming Events</h1>
+
+<% upcoming = false %>
+<% @articles.each do |article| %>
+<% if !article.start_date.to_date.past? %>
+<% upcoming = true %>
+<% end %>
+<% end %>
+
+<% if upcoming == false %>
+<div class="col-xs-8 col-xs-offset-2" style="margin-bottom:2em">
+<center>No upcoming events at this time!</center>
+</div>
+<% end %>
 
 <div align="center">
 
@@ -7,13 +20,13 @@
 
 <%= render "/articles/list_new_articles", obj: @articles %>
 
-  <%= will_paginate %>
+<%= will_paginate %>
 <div class="col-xs-8 col-xs-offset-2">
-<h1 align='center' style='margin-bottom: .5em;'>Past Events</h1>
+    <h1 align='center' style='margin-bottom: .5em;'>Past Events</h1>
 </div>
 
 <%= render "/articles/list_past_articles", obj: @articles %>
 
 <div align="center">
-  <%= will_paginate %>
+    <%= will_paginate %>
 </div>
