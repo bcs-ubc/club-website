@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     get 'about', to: 'pages#about'
     get 'contact', to: 'pages#contact'
 
-    resources :articles
+    resources :articles, path: 'events'
 
     resources :users, except: [:new, :show]
     get ':id', to: 'users#show'
