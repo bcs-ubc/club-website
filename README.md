@@ -5,4 +5,3 @@
 - Improve activities#index page
 - Improve activities#show page
 - Create photo gallery to attach to events
-- Add in form submissions
