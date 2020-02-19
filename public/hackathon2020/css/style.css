@@ -80,6 +80,12 @@ nav.navbar-default.navbar {
 #loading {
   width: 100vw;
   height: 100vh;
+  
+  /* Added adjustments to suit Rails application rendering */
+  right: 0;
+  top: 0;
+  /* end adjustments */
+
   background: #20232D;
   position: fixed;
   z-index: 999999;
