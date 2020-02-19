@@ -255,13 +255,15 @@
         * Adds or remove the possiblity of scrolling through sections by using the mouse wheel or the trackpad.
         */
         FP.setMouseWheelScrolling = function (value){
-            if(value){
-                addMouseWheelHandler();
-                addMiddleWheelHandler();
-            }else{
-                removeMouseWheelHandler();
-                removeMiddleWheelHandler();
-            }
+            // Jerry: Removed mouse wheel scrolling because it was buggy
+            // ---------------------------
+            // if(value){
+            //     addMouseWheelHandler();
+            //     addMiddleWheelHandler();
+            // }else{
+            //     removeMouseWheelHandler();
+            //     removeMiddleWheelHandler();
+            // }
         };
 
         /**
@@ -1262,9 +1264,9 @@
             var isScrollingDown =  elemPosition.top > previousDestTop;
             var sectionBottom = position - windowsHeight + element.outerHeight();
 
-            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
             // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
             // The next part of code has been commented by myself. Why? For a better experience in reponsive mode, when you click on the navigation,
@@ -1285,10 +1287,10 @@
             //     position = sectionBottom;
             // }
 
-            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
-            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+            // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
             /*
             Keeping record of the last scrolled position to determine the scrolling direction.
