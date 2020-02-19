@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
 before_action :set_article, only: [:edit, :update, :show, :destroy]
-before_action :require_user, except: [:index, :show]
+before_action :require_user, only: [:create, :edit, :update, :destroy]
 before_action :require_permissions, only: [:edit, :update, :destroy]
 
   def index
