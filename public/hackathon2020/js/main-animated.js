@@ -9,12 +9,12 @@ $(window).load(function(){
     setTimeout(function(){
 
         $("#preloader").removeClass('flipInY').addClass('fadeOut');
-        
+
     },1000);
 
     setTimeout(function(){
 
-        
+
         $("#loading").addClass('vanish');
 
         $('.open-anim').each(function(i) {
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
     $('#fullpage').fullpage({
         navigation: true,
-        navigationTooltips: ['Home', 'About', 'Highlights', 'People', 'Info'],
+        navigationTooltips: ['Home', 'About', 'Highlights', 'People', 'Info', 'FAQ'],
         responsiveWidth: 1025,
         scrollBar:true,
 
@@ -93,7 +93,7 @@ $(document).ready(function(){
     /* ------------------------------------- */
     /* 4. Scroll Reveal .................... */
     /* ------------------------------------- */
-    // Reveal animations, more informations here : https://scrollrevealjs.org/ 
+    // Reveal animations, more informations here : https://scrollrevealjs.org/
 
     var fooReveal = {
       delay    : 200,
@@ -125,5 +125,5 @@ $(document).ready(function(){
         // Set up a background image for each link based on data-image attribute
         .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
     });
- 
+
 });
