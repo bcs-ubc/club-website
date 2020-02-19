@@ -94,7 +94,7 @@
 
     $.fn.fullpage = function(options) {
         //only once my friend!
-        if($('html').hasClass(ENABLED)){ displayWarnings(); return };
+        if($('html').hasClass(ENABLED)){ location.reload(); return }; // replaced { displayWarnings(); return };
 
         // common jQuery objects
         var $htmlBody = $('html, body');
