@@ -1,3 +1,7 @@
 <div class="footer col-sm-2 col-sm-offset-5">
-    <%= link_to "Manage Site", "login_path", style: "color:#777;" %>
+    <% if !user_signed_in? %>
+    <%= link_to "Site Admin Login", new_user_session_path, style: "color:#777;" %>
+    <% else %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, style: "color:#777;" %>
+    <% end %>
 </div>
