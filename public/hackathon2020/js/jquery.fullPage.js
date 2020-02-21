@@ -931,7 +931,7 @@
                             if($(SECTION_ACTIVE_SEL).is(currentSection)){
                                 isResizing = true;
                             }
-                            scrollPage($(SECTION_ACTIVE_SEL));
+                            // scrollPage($(SECTION_ACTIVE_SEL));
 
                             isResizing = false;
                         }
