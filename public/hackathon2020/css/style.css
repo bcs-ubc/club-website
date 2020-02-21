@@ -80,7 +80,7 @@ nav.navbar-default.navbar {
 #loading {
   width: 100vw;
   height: 100vh;
-  
+
   /* Added adjustments to suit Rails application rendering */
   right: 0;
   top: 0;
@@ -747,15 +747,13 @@ sup {
 }
 
 .copyright {
-  position: absolute;
-  left: 3rem;
   bottom: 0;
   font-family: "Open Sans", "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.1rem;
   font-weight: 300;
-  line-height: 5rem;
   z-index: 999;
+  text-align: center;
 }
 
 .fp-section.fp-table, .fp-slide.fp-table {
