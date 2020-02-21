@@ -604,16 +604,20 @@
 		<script src="/hackathon2020/js/notifyMe.js"></script>
 
 		<script>
-		// Set up your end date just below
-		$('#clock').countdown('2020/03/27 18:00:00', function(event) {
+			// Set up your end date just below
+			try {
+				$('#clock').countdown('2020/03/27 18:00:00', function(event) {
 
-			var $this = $(this).html(event.strftime(''
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%D<span>Days</span></div> '
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%H<span>Hours</span></div> '
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%M<span>Minutes</span></div> '
-			+ '<div class="col-xs-6 col-sm-3 col-lg-3">%S<span>Seconds</span></div>'));
+					var $this = $(this).html(event.strftime(''
+					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%D<span>Days</span></div> '
+					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%H<span>Hours</span></div> '
+					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%M<span>Minutes</span></div> '
+					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%S<span>Seconds</span></div>'));
 
-		});
+				});}
+				catch(error) {
+					location.reload();
+				}
 		</script>
 
 		<!-- Main JS File -->
