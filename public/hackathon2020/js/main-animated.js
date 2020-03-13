@@ -66,7 +66,7 @@ $(document).ready(function(){
 
     $('#fullpage').fullpage({
         navigation: true,
-        navigationTooltips: ['Home', 'About', 'Highlights', 'People', 'Info', 'FAQ'],
+        navigationTooltips: ['Home', 'About', 'Highlights', 'People', 'Info', 'FAQ', "Public Health Advisory"],
         responsiveWidth: 1025,
         scrollBar:true,
 
