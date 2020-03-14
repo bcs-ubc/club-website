@@ -47,6 +47,7 @@
 			</div>
 
 		</div>
+		<% flash[:danger] = "In light of the recent announcement, the BCSSA exec team has decided to postpone the hackathon until further notice. We were really looking forward to the hackathon and do not take this decision lightly. In the interest of supporting the University's response to the ongoing COVID-19 situation, we are temporarily postponing the hackathon and will reschedule it once we have been advised that it is appropriate." %>
 
 		<!-- +++ START - Fullpage sections +++ -->
 		<div id="fullpage">
@@ -64,6 +65,7 @@
 				<div class="intro">
 
 					<p class="open-anim opacity-0"><h2>BCS Hacks 2020<br>March 27 - 28</h2>
+					<a href="javascript:document.getElementById('section6').scrollIntoView({behavior:'smooth'});">(Postponed until further notice)</a>
 					<!-- Countdown, set up your end date at the very bottom of this file -->
 					<div id="clock" class="container open-anim opacity-0"></div>
 
@@ -567,21 +569,24 @@
 					<div class="row row-no-margin">
 						<br><br><br>
 						<h2>Public Health Advisory</h2>
-						<center>Last Updated: March 12, 2020</center>
+						<center>Last Updated: March 13, 2020</center>
 						<br>
 
 						<div class="col-md-offset-2 col-md-8" style="text-align:left">
-							As we saw in the notice sent by Santa Ono today regarding the current and ongoing situation with COVID-19, the University of British Columbia is recommended to continue normal operations by the advisory of various experts including the 
-							Provincial Medical Health Officer Dr. Bonnie Henry, the BC Centre for Disease Control, Ministry of Health and Vancouver Coastal Health. 
-							<br><br>
-							Dr. Bonnie Henry has also stated that events with an attendance greater than 250 are banned as they do not provide adequate space for social distancing. 
-							BCS Hacks' registration is below that number by a significant margin. 
-							In addition, there are currently no presumptive cases known at the UBC Vancouver campus.
-							<br><br>
-							With the aforementioned reasons and the information currently available to us, the 2020 BCS Hacks will continue as planned. 
-							We will continue to monitor the statements in the next two weeks and follow the guidance from the respective health authorities. S
-							hould the University recommend that all events be canceled, 
-							we will reschedule the Hackathon to later this year when the number of new confirmed cases has subsided and the relevant health authorities have deemed it appropriate.
+						As you may have seen recently, UBC has announced that it will be transitioning to online classes effective Monday, March 16, 2020, for the remainder of the term. For more information about the UBC response to COVID-19, please see the Campus Notifications page. <br>
+						<br>
+						In light of the recent announcement, the BCSSA exec team has decided to postpone the hackathon until further notice. We were really looking forward to the hackathon and do not take this decision lightly. In the interest of supporting the University's response to the ongoing COVID-19 situation, we are temporarily postponing the hackathon and will reschedule it once we have been advised that it is appropriate. When we have more information about rescheduling, we will let you know.<br>
+						<br>
+						Please note: while this is an ongoing and still breaking issue, there is currently no cause for panic. This decision is being made to support the effort to reduce large social gatherings as directed by the Office of the Provincial Medical Health Officer, BC Centre for Disease Control and the Ministry of Health.<br>
+						<br>
+						In the meantime, we encourage all would-be attendees to build your own projects on your own or within small groups of friends. Given the recent events, you may wish to try building something within the themes of health, community, wellbeing, or anything else that you are passionate about. <br>
+						<br>
+						On a final and friendly note, stay positive! This is temporary, and we will get through this. As always, stay safe and wash your hands.<br>
+						<br>
+						Wishing you well,
+						<br>
+						BCS Students Association
+						
 
 							
 						</div>
@@ -643,19 +648,17 @@
 
 		<script>
 			// Set up your end date just below
-			try {
-				$('#clock').countdown('2020/03/27 18:00:00', function(event) {
-
-					var $this = $(this).html(event.strftime(''
-					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%D<span>Days</span></div> '
-					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%H<span>Hours</span></div> '
-					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%M<span>Minutes</span></div> '
-					+ '<div class="col-xs-6 col-sm-3 col-lg-3">%S<span>Seconds</span></div>'));
-
-				});}
-				catch(error) {
-					location.reload();
-				}
+			// try {
+			// 	$('#clock').countdown('2020/03/27 18:00:00', function(event) 
+			// 		var $this = $(this).html(event.strftime(''
+			// 		+ '<div class="col-xs-6 col-sm-3 col-lg-3">%D<span>Days</span></div> '
+			// 		+ '<div class="col-xs-6 col-sm-3 col-lg-3">%H<span>Hours</span></div> '
+			// 		+ '<div class="col-xs-6 col-sm-3 col-lg-3">%M<span>Minutes</span></div> '
+			// 		+ '<div class="col-xs-6 col-sm-3 col-lg-3">%S<span>Seconds</span></div>'))
+			// 	});}
+			// 	catch(error) {
+			// 		location.reload();
+			// 	}
 		</script>
 
 		<!-- Main JS File -->
